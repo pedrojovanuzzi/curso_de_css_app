@@ -13,6 +13,19 @@
     border-radius: 10px;
 }
 
+.box::before{ /* Bolinha Preta no meio */
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
 .arrow{
     font-size: 40px;
     position: absolute; /* Faz toda a diferença em colocar onde quer o icone */
@@ -21,6 +34,7 @@
     transform: translateY(-50%); /* Deixa o Icone no meio */
 }
 
+
 .arrow.left{
     left:20px;
 }
@@ -28,6 +42,7 @@
 .arrow.right{
     right:20px;
 }
+
 
 @media  screen and (max-width: 600px) {
     .box{
