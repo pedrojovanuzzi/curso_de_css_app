@@ -6,7 +6,7 @@
 }
 
 .box{
-    background-color: rgb(218, 157, 157);
+    border: 3px solid black;
     height: 100px;
     width: 500px;
     position: relative; /* Faz toda a diferença em colocar onde quer o icone */
@@ -16,7 +16,7 @@
 .arrow{
     font-size: 40px;
     position: absolute; /* Faz toda a diferença em colocar onde quer o icone */
-
+    cursor: pointer;
     top: 50%; /* Deixa o Icone no meio */
     transform: translateY(-50%); /* Deixa o Icone no meio */
 }
@@ -27,4 +27,11 @@
 
 .arrow.right{
     right:20px;
+}
+
+@media  screen and (max-width: 600px) {
+    .box{
+        height: 100px;
+        width: 300px;
+    }
 }
