@@ -1,0 +1,30 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: rgb(218, 157, 157);
+    height: 100px;
+    width: 500px;
+    position: relative; /* Faz toda a diferença em colocar onde quer o icone */
+    border-radius: 10px;
+}
+
+.arrow{
+    font-size: 40px;
+    position: absolute; /* Faz toda a diferença em colocar onde quer o icone */
+
+    top: 50%; /* Deixa o Icone no meio */
+    transform: translateY(-50%); /* Deixa o Icone no meio */
+}
+
+.arrow.left{
+    left:20px;
+}
+
+.arrow.right{
+    right:20px;
+}
