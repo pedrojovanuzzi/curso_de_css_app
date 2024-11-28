@@ -25,6 +25,7 @@
   background-color: rgb(223, 220, 220);
   transition: all 0.5s;
   transform: translateY(3px);
+  cursor: pointer;
 }
 
 .input_aula2[type="checkbox"]:checked + span {  /* o Mais significa o span mais proximo do checkbox selecionado */

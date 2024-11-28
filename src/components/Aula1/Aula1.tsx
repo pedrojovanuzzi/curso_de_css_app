@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import styles from "./style.module.css";
 import { HiBackward } from "react-icons/hi2";
 import { HiForward } from "react-icons/hi2";
 
@@ -25,10 +25,10 @@ export const Aula1 = () => {
   }
 
   return (
-    <div className="body">
+    <div className={styles.body}>
       <div className="box" style={{ backgroundColor: colors[index].color }}>
-        <HiBackward className="arrow left" onClick={previousColor} />
-        <HiForward className="arrow right" onClick={nextColor} />
+        <HiBackward className={`${styles.arrow} ${styles.left}`} onClick={previousColor} />
+        <HiForward className={`${styles.arrow} ${styles.right}`} onClick={nextColor} />
       </div>
     </div>
   );
