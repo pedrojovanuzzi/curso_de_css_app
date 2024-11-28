@@ -26,7 +26,7 @@ export const Aula1 = () => {
 
   return (
     <div className={styles.body}>
-      <div className="box" style={{ backgroundColor: colors[index].color }}>
+      <div className={styles.box} style={{ backgroundColor: colors[index].color }}>
         <HiBackward className={`${styles.arrow} ${styles.left}`} onClick={previousColor} />
         <HiForward className={`${styles.arrow} ${styles.right}`} onClick={nextColor} />
       </div>
