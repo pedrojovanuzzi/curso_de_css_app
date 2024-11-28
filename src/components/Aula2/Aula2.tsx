@@ -6,19 +6,19 @@ export const Aula2 = () => {
       <div className="check_div">
         <h1>CheckBox</h1>
         <label htmlFor="one">
-          <input type="checkbox" name="one" id="one" />
-          <span></span>
-          <a>One</a>
+          <input className="input_aula2" type="checkbox" name="one" id="one" />
+          <span className="span_aula2"></span>
+          <a className="a_aula2">One</a>
         </label>
         <label htmlFor="two">
-          <input type="checkbox" name="two" id="two" />
-          <span></span>
-          <a>Two</a>
+          <input className="input_aula2" type="checkbox" name="two" id="two" />
+          <span className="span_aula2"></span>
+          <a className="a_aula2">Two</a>
         </label>
         <label htmlFor="three">
-          <input type="checkbox" name="three" id="three" />
-          <span></span>
-          <a>Three</a>
+          <input className="input_aula2" type="checkbox" name="three" id="three" />
+          <span className="span_aula2"></span>
+          <a className="a_aula2">Three</a>
         </label>
       </div>
     </div>

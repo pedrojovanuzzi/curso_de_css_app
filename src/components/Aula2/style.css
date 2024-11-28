@@ -10,11 +10,11 @@
   text-align: center;
 }
 
-input[type="checkbox"] {
+.input_aula2[type="checkbox"] {
   display: none;
 }
 
-span {
+.span_aula2 {
   display: inline-block;
   width: 3em;
   height: 1.5em;
@@ -27,11 +27,11 @@ span {
   transform: translateY(3px);
 }
 
-input[type="checkbox"]:checked + span {  /* o Mais significa o span mais proximo do checkbox selecionado */
+.input_aula2[type="checkbox"]:checked + span {  /* o Mais significa o span mais proximo do checkbox selecionado */
   background-color: rgb(255, 255, 255);
 }
 
-input[type="checkbox"] + span::after {
+.input_aula2[type="checkbox"] + span::after {
   content: "";
   background-color: rgb(97, 95, 95);
   display: inline-block;
@@ -42,7 +42,7 @@ input[type="checkbox"] + span::after {
   transition: all 0.5s;
 }
 
-input[type="checkbox"]:checked + span::after {
+.input_aula2[type="checkbox"]:checked + span::after {
   content: "";
   background-color: rgb(0, 0, 0);
   display: inline-block;
@@ -52,6 +52,6 @@ input[type="checkbox"]:checked + span::after {
   border-radius: 2em;
 }
 
-a {
+.a_aula2 {
   border: none;
 }
