@@ -11,6 +11,7 @@
     width: 500px;
     position: relative; /* Faz toda a diferença em colocar onde quer o icone */
     border-radius: 10px;
+    transition: all 0.5s;
 }
 
 .box::before{ /* Bolinha Preta no meio */
