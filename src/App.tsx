@@ -8,6 +8,7 @@ function App() {
       <span>Lista dos Exercicios</span>
       <a href="/aula1">Aula 1 Position Absolute/Relative</a>
       <a href="/aula2">Aula 2 Checkbox Puro com Css e Acessibilidade</a>
+      <a href="/aula3">Aula 3 Galeria de Imagens</a>
     </div>
   );
 }

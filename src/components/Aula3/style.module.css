@@ -1,0 +1,100 @@
+.body {
+  height: 100vh;
+  display: grid;
+}
+
+.img {
+  width: 200px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.imgWrapper {
+  position: relative;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.479);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+}
+
+.imgWrapper:hover img {
+  transform: scale(1.2);
+}
+
+.imgWrapper::after {
+  content: "";
+  width: 200px;
+  height: 133px;
+  background-color: rgba(255, 255, 255, 0.507);
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.imgWrapper:hover::after {
+  background-color: transparent;
+}
+
+.imgWrapper:before {
+  content: "";
+  color: transparent;
+  text-align: center;
+  font-family: "Sour Gummy", serif;
+  width: 200px;
+  height: 1px;
+  background-color: transparent;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.imgWrapper:hover:before {
+  content: "";
+  color: white;
+  text-align: center;
+  font-family: "Sour Gummy", serif;
+  width: 200px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.918);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.2s;
+}
+
+.imgWrapper:nth-child(1):hover:before {
+  content: "Cachorro";
+}
+
+.imgWrapper:nth-child(2):hover:before {
+  content: "Predios";
+}
+
+.imgWrapper:nth-child(3):hover:before {
+  content: "Montanha";
+}
+
+.gallery {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-self: center;
+
+  height: 300px;
+  padding: 0px 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto; /* Permite que a galeria se ajuste dinamicamente */
+  }
+}
