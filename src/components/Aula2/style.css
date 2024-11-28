@@ -1,0 +1,57 @@
+.aula2_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.check_div {
+  align-self: center;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+span {
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+  border-radius: 1em;
+  outline: 2px solid black;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: rgb(223, 220, 220);
+  transition: all 0.5s;
+  transform: translateY(3px);
+}
+
+input[type="checkbox"]:checked + span {  /* o Mais significa o span mais proximo do checkbox selecionado */
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="checkbox"] + span::after {
+  content: "";
+  background-color: rgb(97, 95, 95);
+  display: inline-block;
+  width: 1.5em;
+  height: 1.4em;
+  transform: translate(10px, 0.5px);
+  border-radius: 2em;
+  transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked + span::after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  width: 1.5em;
+  height: 1.4em;
+  transform: translate(-10px, 0.5px);
+  border-radius: 2em;
+}
+
+a {
+  border: none;
+}
