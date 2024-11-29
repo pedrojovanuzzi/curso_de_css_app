@@ -10,6 +10,7 @@ export const Aula4 = () => {
 
   function doMath() {
     try {
+      // eslint-disable-next-line no-eval
       const result = eval(input);
       setInput(String(result));
     } catch (error) {
