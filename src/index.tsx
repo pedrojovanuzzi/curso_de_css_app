@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { Aula1 } from './components/Aula1/Aula1';
 import { Aula2 } from './components/Aula2/Aula2';
 import { Aula3 } from './components/Aula3/Aula3';
+import { Aula4 } from './components/Aula4/Aula4';
 
 
 const root = ReactDOM.createRoot(
@@ -21,6 +22,7 @@ root.render(
         <Route path="/aula1" element={<Aula1 />} />
         <Route path="/aula2" element={<Aula2 />} />
         <Route path="/aula3" element={<Aula3 />} />
+        <Route path="/aula4" element={<Aula4 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
