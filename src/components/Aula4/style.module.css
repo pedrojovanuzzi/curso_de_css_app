@@ -63,3 +63,61 @@
     background-color: rgb(255, 255, 255);
     color: black;
 }
+
+
+
+@media screen and (max-width: 915px) {
+    .calculadoraWrapper{
+        
+        height: 500px;
+        width: 300px;
+        
+    }
+
+    .calculadoraDisplay{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        gap: 5px;
+        margin: 20px; 
+    }
+    
+} 
+
+
+@media screen and (orientation: landscape) and (max-width: 915px) {
+    .calculadoraWrapper{
+        height: 350px;
+        width: 600px;
+    }
+
+    .calculadoraDisplay{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        gap: 5px;
+        margin: 20px; 
+    }
+
+    .calculadoraDisplay > span:nth-child(1){
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin: 0px 0px;
+        font-size: 30px;
+        text-align: end;
+        padding: 5px;
+    }
+
+    .calculadoraDisplay > span:nth-child(17){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .calculadoraDisplay > span:nth-child(18){
+        grid-column: span 2;
+    }
+    
+} /* adicionado css para aparelho deitado */
