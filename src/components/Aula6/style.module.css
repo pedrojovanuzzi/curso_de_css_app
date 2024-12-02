@@ -1,0 +1,153 @@
+.body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#EAE2B6, #FEBB2B);
+    font-family: "Parkinsans", sans-serif;
+}
+
+.emojiMain{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-left: 250px;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.emojiMain > img {
+    position: absolute;
+    top: 100px;
+}
+
+.emojiMain strong{
+    color: rgb(185, 35, 35);
+}
+
+.emojiMain h1{
+    font-size: 50px;
+    text-align: start;
+    max-width: 500px;
+}
+
+.emojiMain input:nth-child(1) {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    margin: 0px;
+    ;
+}
+
+.emojiMain input:nth-child(2) {
+    border: none;
+    background-color: rgb(8, 8, 94);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+    margin: 0px;
+    padding: 15px;
+}
+
+
+.emojiMain input:nth-child(1)::placeholder {
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.emojiMain aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.emojisAnimationWrapper{
+    position: relative;
+    
+}
+
+.emojisAnimationWrapper img{
+    position: absolute;
+    animation: up_emoji 2s infinite alternate;
+}
+
+.emojisAnimationWrapper img:nth-child(1) {
+    top: 130px;
+    left: 250px;
+}
+
+.emojisAnimationWrapper img:nth-child(2) {
+    top: 320px;
+    left: 100px;
+}
+
+.emojisAnimationWrapper img:nth-child(3) {
+    top: 150px;
+    left: 150px;
+}
+
+.emojisAnimationWrapper img:nth-child(4) {
+    top: 150px;
+    left: 500px;
+}
+
+.emojisAnimationWrapper img:nth-child(5) {
+    top: 500px;
+    left: 150px;
+}
+
+.emojisAnimationWrapper img:nth-child(6) {
+    top: 500px;
+    left: 500px;
+}
+
+
+
+
+@keyframes up_emoji {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px); 
+    }
+}
+
+
+@media screen and (max-width: 915px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 20px;
+    }
+
+    .emojiMain {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .emojiMain > img {
+        top: 0px;
+    }
+
+    .emojiMain h1 {
+        font-size: 24px; 
+        text-align: center; 
+        margin-top: 100px;
+    }
+
+    .emojisAnimationWrapper{
+        background-color: red;
+        position: static;
+        margin-top: 100px;
+        padding: 30px;
+        display: none;
+    }
+}
