@@ -16,10 +16,6 @@
     position: relative;
 }
 
-.emojiMain > img {
-    position: absolute;
-    top: 100px;
-}
 
 .emojiMain strong{
     color: rgb(185, 35, 35);
@@ -117,13 +113,12 @@
 }
 
 
-@media screen and (max-width: 915px) {
+@media screen and (width <= 915px) {
     .body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
         padding: 20px;
     }
 
@@ -150,4 +145,145 @@
         padding: 30px;
         display: none;
     }
+}
+
+
+@media screen and (915px <= width <= 1040px) {
+    .body{
+        height: 100vw;
+    }
+    .emojisAnimationWrapper img{
+        width: 7em;
+        margin-top: 5em;
+    }
+    
+    .emojisAnimationWrapper img:nth-child(1) {
+        top: 270px;
+        left: 320px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(2) {
+        top: 320px;
+        left: 120px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(3) {
+        top: 250px;
+        left: 150px;
+        width: 16em;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(4) {
+        top: 220px;
+        left: 200px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(5) {
+        top: 400px;
+        left: 280px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(6) {
+        top: 400px;
+        left: 160px;
+        
+    }
+    
+}
+
+
+@media screen and (1040px <= width <= 1172px) {
+
+    .emojisAnimationWrapper img{
+        width: 8em;
+    }
+    
+    .emojisAnimationWrapper img:nth-child(1) {
+        top: 260px;
+        left: 360px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(2) {
+        top: 320px;
+        left: 110px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(3) {
+        top: 250px;
+        left: 150px;
+        width: 20em;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(4) {
+        top: 220px;
+        left: 180px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(5) {
+        top: 450px;
+        left: 300px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(6) {
+        top: 450px;
+        left: 180px;
+        
+    }
+    
+}
+
+
+@media screen and (1172px <= width <= 1440px) {
+
+    .emojisAnimationWrapper img{
+        width: 10em;
+    }
+    
+    .emojisAnimationWrapper img:nth-child(1) {
+        top: 200px;
+        left: 310px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(2) {
+        top: 320px;
+        left: 110px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(3) {
+        top: 250px;
+        left: 150px;
+        width: 24em;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(4) {
+        top: 210px;
+        left: 180px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(5) {
+        top: 450px;
+        left: 360px;
+        
+    }
+    
+    .emojisAnimationWrapper img:nth-child(6) {
+        top: 480px;
+        left: 180px;
+        
+    }
+    
 }
