@@ -140,12 +140,8 @@
 }
 
 @media screen and (915px <= width <= 1040px) {
-  .body {
-    height: 100vw;
-  }
   .emojisAnimationWrapper img {
     width: 7em;
-    margin-top: 5em;
   }
 
   .emojisAnimationWrapper img:nth-child(1) {
@@ -252,4 +248,15 @@
     top: 480px;
     left: 180px;
   }
+}
+
+
+@media screen and (height <= 720px) and (orientation: landscape) {
+    .body{
+        height: 100vw;
+    }
+
+    .emojisAnimationWrapper img{
+        margin-top: 5em;
+    }
 }
