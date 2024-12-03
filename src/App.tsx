@@ -12,6 +12,7 @@ function App() {
       <a className='a_app' href="/aula4">Aula 4 Calculadora com Grid</a>
       <a className='a_app' href="/aula5">Aula 5 DashBoard (Sem Responsividade)</a>
       <a className='a_app' href="/aula6">Aula 6 Animações</a>
+      <a className='a_app' href="/aula7">Aula 7 3D Jogo da Memória</a>
     </div>
   );
 }
