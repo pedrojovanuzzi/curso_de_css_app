@@ -69,7 +69,7 @@ export const Aula5 = () => {
           <button>See More</button>
         </div>
         <div className={styles.announcedTodayWrapper}>
-          <img src={chart1} alt="" />
+          <img src={chart1} className={styles.imgFull} alt="" />
         </div>
         <div className={styles.distributedTodayWrapper}>
           <img className={styles.imgHalf} src={chart2} alt="" />

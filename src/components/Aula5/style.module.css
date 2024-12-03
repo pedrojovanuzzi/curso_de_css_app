@@ -116,7 +116,7 @@
 
 .headWrapper > div::after {
   content: "";
-  height: 50px;
+  height: 3.1em;
   width: 2px;
   position: absolute;
   background-color: rgb(158, 156, 156);
@@ -127,7 +127,7 @@
 .announcedTodayWrapper {
   grid-column: 1 / -1;
   background-color: rgb(255, 255, 255);
-
+  border-radius: 10px;
   text-align: start;
   display: flex;
   align-items: center;
@@ -168,4 +168,58 @@
 .sortedTodayWrapper > img {
   justify-self: center;
   align-items: center;
+}
+
+
+
+@media screen and (width < 1400px) {
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dashboardMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  
+.dashboardHeader > span {
+  position: static;
+}
+
+.dashboardAside > button:nth-last-child(1) {
+  position: static;
+  bottom: 0px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.headWrapper > div::after {
+  display: none;
+}
+
+.headWrapper {
+  padding: 1.5em;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headWrapper button{
+  padding: 0.5em 2.5em;
+}
+
+.imgFull{
+  
+  
+  padding: 20px;
+  
+}
+
 }
