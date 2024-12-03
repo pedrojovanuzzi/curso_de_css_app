@@ -23,6 +23,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
   color: rgb(0, 0, 0);
+}
+
+.a_app:hover{
+  box-shadow: 0px 0px 10px 2px rgb(36, 240, 17);
 }
 
