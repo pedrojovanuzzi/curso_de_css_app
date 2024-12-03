@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Pagina Inicial</h1>
+      <h1>Página Inicial</h1>
       <p>O objetivo desta página é aprender/praticar e deixar anotado codigos utéis de CSS e React com TypesScript</p>
       <span>Lista dos Exercicios</span>
       <a className='a_app' href="/aula1">Aula 1 Position Absolute/Relative</a>
