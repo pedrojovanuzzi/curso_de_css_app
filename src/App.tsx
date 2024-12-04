@@ -14,6 +14,7 @@ function App() {
       <a className='a_app' href="/aula6">Aula 6 Animações</a>
       <a className='a_app' href="/aula7">Aula 7 3D Jogo da Memória</a>
       <a className='a_app' href="/aula8">Aula 8 NavBar Responsiva (Mobile First)</a>
+      <a className='a_app' href="/aula9">Aula 9 Tailwind CSS</a>
     </div>
   );
 }
