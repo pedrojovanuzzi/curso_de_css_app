@@ -16,7 +16,11 @@ export const NavBar = ({ children }: NavBarProps) => {
 
   return (
     <div className={styles.body}>
-      <header className={styles.header + ` ${isOpen ? styles.headerOpen : styles.headerClosed}`}>
+      <header
+        className={
+          styles.header + ` ${isOpen ? styles.headerOpen : styles.headerClosed}`
+        }
+      >
         <div className={styles.navWrapper}>
           <nav>
             <span>
@@ -44,9 +48,7 @@ export const NavBar = ({ children }: NavBarProps) => {
         </div>
         {isOpen ? <MenuItens /> : ""}
       </header>
-      <div className={styles.centerPage}>
-      {children}
-      </div>
+      <div className={styles.centerPage}>{children}</div>
     </div>
   );
 };
