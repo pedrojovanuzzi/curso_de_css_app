@@ -1,4 +1,4 @@
-import { HiArchiveBox, HiCalendar, HiCog6Tooth, HiMiniHome } from "react-icons/hi2";
+import { HiArchiveBox, HiCalendar, HiCog6Tooth, HiMiniHome, HiArrowLeftEndOnRectangle  } from "react-icons/hi2";
 import styles from "./css.module.css";
 import { useNavigate } from "react-router";
 
@@ -32,6 +32,13 @@ export const MenuItens = () => {
         <HiCog6Tooth
           onClick={() => {
             navigate("/aula8_item3");
+          }}
+        />
+      </li>
+      <li>
+        <HiArrowLeftEndOnRectangle
+          onClick={() => {
+            navigate("/");
           }}
         />
       </li>
