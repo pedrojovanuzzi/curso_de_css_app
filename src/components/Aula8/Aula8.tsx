@@ -12,7 +12,7 @@ export const Aula8 = () => {
 
   return (
     <div className={styles.body}>
-      <header className={isOpen ? styles.headerOpen : styles.headerClosed}>
+      <header className={styles.header + ` ${isOpen ? styles.headerOpen : styles.headerClosed}`}>
         <div className={styles.navWrapper}>
           <nav>
             <span>
