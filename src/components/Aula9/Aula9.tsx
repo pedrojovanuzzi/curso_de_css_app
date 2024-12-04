@@ -3,7 +3,7 @@ import { HiMagnifyingGlass, HiMicrophone } from "react-icons/hi2";
 export const Aula9 = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-slate-800">
-      <div className="text-center w-screen">
+      <div className="text-center w-screen ">
         <h1 className="text-white">Recriando o Buscar do Google</h1>
         <div className="flex justify-center items-center mt-5">
           <div className="relative flex items-center w-6/12">
