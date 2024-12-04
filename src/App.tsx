@@ -13,6 +13,7 @@ function App() {
       <a className='a_app' href="/aula5">Aula 5 DashBoard (Apenas CSS)</a>
       <a className='a_app' href="/aula6">Aula 6 Animações</a>
       <a className='a_app' href="/aula7">Aula 7 3D Jogo da Memória</a>
+      <a className='a_app' href="/aula8">Aula 8 NavBar Responsiva</a>
     </div>
   );
 }
