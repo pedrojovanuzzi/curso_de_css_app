@@ -3,20 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router";
-import { Aula1 } from './components/Aula1/Aula1';
-import { Aula2 } from './components/Aula2/Aula2';
-import { Aula3 } from './components/Aula3/Aula3';
-import { Aula4 } from './components/Aula4/Aula4';
-import { Aula5 } from './components/Aula5/Aula5';
-import { Aula6 } from './components/Aula6/Aula6';
-import { Aula7 } from './components/Aula7/Aula7';
-import { Aula8 } from './components/Aula8/Aula8';
-import { Aula8Item1 } from './components/Aula8/Aula8_ItemsRedirect/Aula8_Item1';
-import { Aula8Item2 } from './components/Aula8/Aula8_ItemsRedirect/Aula8_Item2';
-import { Aula8Item3 } from './components/Aula8/Aula8_ItemsRedirect/Aula8_Item3';
-import { Aula9 } from './components/Aula9/Aula9';
-import { Aula10 } from './components/Aula10/Aula10';
-import { Aula11 } from './components/Aula11/Aula11';
+import { Aula1 } from './pages/Aula1/Aula1';
+import { Aula2 } from './pages/Aula2/Aula2';
+import { Aula3 } from './pages/Aula3/Aula3';
+import { Aula4 } from './pages/Aula4/Aula4';
+import { Aula5 } from './pages/Aula5/Aula5';
+import { Aula6 } from './pages/Aula6/Aula6';
+import { Aula7 } from './pages/Aula7/Aula7';
+import { Aula8 } from './pages/Aula8/Aula8';
+import { Aula8Item1 } from './pages/Aula8/Aula8_ItemsRedirect/Aula8_Item1';
+import { Aula8Item2 } from './pages/Aula8/Aula8_ItemsRedirect/Aula8_Item2';
+import { Aula8Item3 } from './pages/Aula8/Aula8_ItemsRedirect/Aula8_Item3';
+import { Aula9 } from './pages/Aula9/Aula9';
+import { Aula10 } from './pages/Aula10/Aula10';
+import { Aula11 } from './pages/Aula11/Aula11';
 
 
 const root = ReactDOM.createRoot(
