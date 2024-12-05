@@ -16,6 +16,7 @@ import { Aula8Item2 } from './components/Aula8/Aula8_ItemsRedirect/Aula8_Item2';
 import { Aula8Item3 } from './components/Aula8/Aula8_ItemsRedirect/Aula8_Item3';
 import { Aula9 } from './components/Aula9/Aula9';
 import { Aula10 } from './components/Aula10/Aula10';
+import { Aula11 } from './components/Aula11/Aula11';
 
 
 const root = ReactDOM.createRoot(
@@ -41,6 +42,7 @@ root.render(
         <Route path="/aula8_item3" element={<Aula8Item3 />} />
         <Route path="/aula9" element={<Aula9 />} />
         <Route path="/aula10" element={<Aula10/>} />
+        <Route path="/aula11" element={<Aula11/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
