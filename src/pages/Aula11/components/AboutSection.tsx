@@ -65,7 +65,7 @@ export default function AboutSection() {
             <div className="max-lg:mt-16 lg:col-span-1">
               <p className="text-base/7 font-semibold text-gray-500">Nossas Bases São</p>
               <hr className="mt-6 border-t border-gray-200" />
-              <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+              <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-1">
                 <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
                   <dt className="text-sm/6 text-gray-600">Qualidade absoluta</dt>
                   <dd className="order-first text-4xl font-semibold tracking-tight">

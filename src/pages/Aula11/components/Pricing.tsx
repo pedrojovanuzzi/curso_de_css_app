@@ -54,8 +54,8 @@ export default function Example() {
   const [frequency, setFrequency] = useState(frequencies[0])
 
   return (
-    <div id='planos' className="bg-gray-900 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-gray-900 py-24 sm:py-32">
+      <div id='planos' className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base/7 font-semibold text-indigo-400">Preços</h2>
           <p className="mt-2 text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
