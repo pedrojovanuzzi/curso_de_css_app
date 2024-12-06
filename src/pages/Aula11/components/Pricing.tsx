@@ -11,7 +11,7 @@ const tiers = [
   {
     name: 'BASICO',
     id: 'tier-basic',
-    href: '#',
+    href: `'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Basico%20de%20R$89,90!%22&type=phone_number&app_absent=0'`,
     price: { monthly: 'R$89,90'},
     description: 'Bom para até 7 Dispositivos',
     features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 7 dispositivos distribuídos entre wifi e cabo simultâneos'],
@@ -20,7 +20,7 @@ const tiers = [
   {
     name: 'INTERMEDIÁRIO',
     id: 'tier-intermediare',
-    href: '#',
+    href: 'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Intermediario%20de%20R$99,90!%22&type=phone_number&app_absent=0',
     price: { monthly: 'R$99,90'},
     description: 'Bom para até 10 Dispositivos',
     features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 10 dispositivos distribuídos entre wifi e cabo simultâneos'],
@@ -29,7 +29,7 @@ const tiers = [
   {
     name: 'MEGA AVANÇADO',
     id: 'tier-advanced',
-    href: '#',
+    href: 'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Avançado%20de%20R$109,90!%22&type=phone_number&app_absent=0',
     price: { monthly: 'R$109,90'},
     description: 'Bom para até 12 Dispositivos',
     features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 12 dispositivos distribuídos entre wifi e cabo simultâneos'],
@@ -38,7 +38,7 @@ const tiers = [
   {
     name: 'TURBO',
     id: 'tier-turbo',
-    href: '#',
+    href: 'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Turbo%20de%20R$159,90!%22&type=phone_number&app_absent=0',
     price: { monthly: 'R$159,90'},
     description: 'Bom para até 15 Dispositivos',
     features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 15 dispositivos distribuídos entre wifi e cabo simultâneos'],
@@ -99,7 +99,7 @@ export default function Example() {
                   'mt-6 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
                 )}
               >
-                Comprar Plano
+                Contratar Plano
               </a>
               <ul role="list" className="mt-8 space-y-3 text-sm/6 text-gray-300 xl:mt-10">
                 {tier.features.map((feature) => (
