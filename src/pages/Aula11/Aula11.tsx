@@ -1,5 +1,13 @@
+import Footer from "./components/Footer"
+import NavBar from "./components/Navbar"
+import { Home } from "./pages/Home"
+
 export const Aula11 = () => {
   return (
-    <div>Aula11</div>
+    <div>
+      <NavBar/>
+      <Home/>
+      <Footer/>
+    </div>
   )
 }
