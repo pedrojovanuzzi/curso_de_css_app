@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router'
 import icon from "../imgs/icon.png";
 
 const navigation = [
   { name: 'Início', href: '/aula11_home' },
-  { name: 'Planos', href: '#' },
+  { name: 'Planos', href: '#planos' },
   { name: 'Sobre', href: '/aula11_about' },
   { name: 'Contato', href: '#' },
   { name: 'Contrato do Cliente', href: '#' },
@@ -13,6 +14,28 @@ const navigation = [
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const navigate = useNavigate();
+
+  const handleNavigation = (href: string) => {
+    if (href === '#planos') {
+      navigate('/aula11_home');
+      setTimeout(() => {
+        const element = document.getElementById('planos');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else if (href.startsWith('#')) {
+      const id = href.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(href);
+    }
+  };
+  
 
   return (
     <header className="bg-gray-900">
@@ -39,9 +62,13 @@ export default function NavBar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
+            <button
+              key={item.name}
+              onClick={() => handleNavigation(item.href)}
+              className="text-sm/6 font-semibold text-white"
+            >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
       </nav>
@@ -70,13 +97,16 @@ export default function NavBar() {
             <div className="-my-6 divide-y divide-gray-500/25">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"
+                    onClick={() => {
+                      handleNavigation(item.href);
+                      setMobileMenuOpen(false);
+                    }}
+                    className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"
                   >
                     {item.name}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>

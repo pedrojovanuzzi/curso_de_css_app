@@ -69,19 +69,19 @@ export default function AboutSection() {
                 <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
                   <dt className="text-sm/6 text-gray-600">Qualidade absoluta</dt>
                   <dd className="order-first text-4xl font-semibold tracking-tight">
-                    <span>1 MISSÃO</span>
+                    <span>1-MISSÃO</span>
                   </dd>
                 </div>
                 <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
                   <dt className="text-sm/6 text-gray-600">Melhores tecnologias e novos desafios</dt>
                   <dd className="order-first text-4xl font-semibold tracking-tight">
-                    <span>2 VISÃO</span>
+                    <span>2-VISÃO</span>
                   </dd>
                 </div>
                 <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
                   <dt className="text-sm/6 text-gray-600">Respeito, responsabilidade e humildade</dt>
                   <dd className="order-first text-4xl font-semibold tracking-tight">
-                    <span>3 VALORES</span>
+                    <span>3-VALORES</span>
                   </dd>
                 </div>
               </dl>
