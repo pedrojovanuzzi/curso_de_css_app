@@ -8,11 +8,12 @@
   margin: 1em;
   font-size: 2em;
   cursor: pointer;
+  
 }
 
 .itens > li {
   transition: all 0.2s;
-  
+  align-self: center;
 }
 
 .itens > li:hover {
