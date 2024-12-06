@@ -2,49 +2,46 @@ import { useState } from 'react'
 import { Radio, RadioGroup } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/20/solid'
 
+
+
 const frequencies = [
-  { value: 'monthly', label: 'Monthly', priceSuffix: '/month' },
-  { value: 'annually', label: 'Annually', priceSuffix: '/year' },
+  { value: 'monthly' as const, label: 'Monthly', priceSuffix: '/mês' },
 ]
 const tiers = [
   {
-    name: 'Freelancer',
-    id: 'tier-freelancer',
+    name: 'BASICO',
+    id: 'tier-basic',
     href: '#',
-    price: { monthly: '$19', annually: '$199' },
-    description: 'The essentials to provide your best work for clients.',
-    features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
+    price: { monthly: 'R$89,90'},
+    description: 'Bom para até 7 Dispositivos',
+    features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 7 dispositivos distribuídos entre wifi e cabo simultâneos'],
     mostPopular: false,
   },
   {
-    name: 'Startup',
-    id: 'tier-startup',
+    name: 'INTERMEDIÁRIO',
+    id: 'tier-intermediare',
     href: '#',
-    price: { monthly: '$29', annually: '$299' },
-    description: 'A plan that scales with your rapidly growing business.',
-    features: [
-      '25 products',
-      'Up to 10,000 subscribers',
-      'Advanced analytics',
-      '24-hour support response time',
-      'Marketing automations',
-    ],
+    price: { monthly: 'R$99,90'},
+    description: 'Bom para até 10 Dispositivos',
+    features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 10 dispositivos distribuídos entre wifi e cabo simultâneos'],
     mostPopular: true,
   },
   {
-    name: 'Enterprise',
-    id: 'tier-enterprise',
+    name: 'MEGA AVANÇADO',
+    id: 'tier-advanced',
     href: '#',
-    price: { monthly: '$59', annually: '$599' },
-    description: 'Dedicated support and infrastructure for your company.',
-    features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      '1-hour, dedicated support response time',
-      'Marketing automations',
-      'Custom reporting tools',
-    ],
+    price: { monthly: 'R$109,90'},
+    description: 'Bom para até 12 Dispositivos',
+    features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 12 dispositivos distribuídos entre wifi e cabo simultâneos'],
+    mostPopular: false,
+  },
+  {
+    name: 'TURBO',
+    id: 'tier-turbo',
+    href: '#',
+    price: { monthly: 'R$159,90'},
+    description: 'Bom para até 15 Dispositivos',
+    features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 15 dispositivos distribuídos entre wifi e cabo simultâneos'],
     mostPopular: false,
   },
 ]
@@ -60,35 +57,15 @@ export default function Example() {
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-400">Pricing</h2>
+          <h2 className="text-base/7 font-semibold text-indigo-400">Preços</h2>
           <p className="mt-2 text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
-            Pricing that grows with you
+            Planos
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-400 sm:text-xl/8">
-          Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer
-          loyalty, and driving sales.
+          Escolha o Plano que deseja
         </p>
-        <div className="mt-16 flex justify-center">
-          <fieldset aria-label="Payment frequency">
-            <RadioGroup
-              value={frequency}
-              onChange={setFrequency}
-              className="grid grid-cols-2 gap-x-1 rounded-full bg-white/5 p-1 text-center text-xs/5 font-semibold text-white"
-            >
-              {frequencies.map((option) => (
-                <Radio
-                  key={option.value}
-                  value={option}
-                  className="cursor-pointer rounded-full px-2.5 py-1 data-[checked]:bg-indigo-500"
-                >
-                  {option.label}
-                </Radio>
-              ))}
-            </RadioGroup>
-          </fieldset>
-        </div>
-        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {tiers.map((tier) => (
             <div
               key={tier.id}
@@ -103,13 +80,13 @@ export default function Example() {
                 </h3>
                 {tier.mostPopular ? (
                   <p className="rounded-full bg-indigo-500 px-2.5 py-1 text-xs/5 font-semibold text-white">
-                    Most popular
+                    Mais Popular
                   </p>
                 ) : null}
               </div>
               <p className="mt-4 text-sm/6 text-gray-300">{tier.description}</p>
               <p className="mt-6 flex items-baseline gap-x-1">
-                {/* <span className="text-4xl font-semibold tracking-tight text-white">{tier.price[frequency.value]}</span> */}
+                <span className="text-4xl font-semibold tracking-tight text-white">{tier.price[frequency.value]}</span>
                 <span className="text-sm/6 font-semibold text-gray-300">{frequency.priceSuffix}</span>
               </p>
               <a
@@ -122,7 +99,7 @@ export default function Example() {
                   'mt-6 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
                 )}
               >
-                Buy plan
+                Comprar Plano
               </a>
               <ul role="list" className="mt-8 space-y-3 text-sm/6 text-gray-300 xl:mt-10">
                 {tier.features.map((feature) => (
