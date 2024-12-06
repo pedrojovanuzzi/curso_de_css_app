@@ -1,15 +1,12 @@
-'use client'
-
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import icon from "../imgs/icon.png";
 
 const navigation = [
-  { name: 'Início', href: '#' },
+  { name: 'Início', href: '/aula11_home' },
   { name: 'Planos', href: '#' },
-  { name: 'Dicas', href: '#' },
-  { name: 'Sobre', href: '#' },
+  { name: 'Sobre', href: '/aula11_about' },
   { name: 'Contato', href: '#' },
   { name: 'Contrato do Cliente', href: '#' },
 ]
