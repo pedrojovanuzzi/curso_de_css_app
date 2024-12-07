@@ -4,7 +4,7 @@ import { Home } from "./pages/Home"
 
 export const Aula11 = () => {
   return (
-    <div>
+    <div className="bg-gray-900">
       <NavBar/>
       <Home/>
       <Footer/>

@@ -11,6 +11,9 @@
 # production
 /build
 
+src/pages/Aula11/contract/contract.pdf
+
+
 # misc
 .DS_Store
 .env.local

@@ -18,6 +18,8 @@ import { Aula9 } from './pages/Aula9/Aula9';
 import { Aula10 } from './pages/Aula10/Aula10';
 import { Aula11 } from './pages/Aula11/Aula11';
 import { About } from './pages/Aula11/pages/About';
+import { Contact } from './pages/Aula11/pages/Contact';
+import { Contract } from './pages/Aula11/pages/Contract';
 
 
 const root = ReactDOM.createRoot(
@@ -47,8 +49,8 @@ root.render(
         <Route path="/aula11" element={<Aula11/>} />
         <Route path="/aula11_home" element={<Aula11/>} />
         <Route path="/aula11_about" element={<About/>} />
-        <Route path="/aula11_contact" element={<Aula11/>} />
-        <Route path="/aula11_contrato" element={<Aula11/>} />
+        <Route path="/aula11_contact" element={<Contact/>} />
+        <Route path="/aula11_contrato" element={<Contract/>} />
 
       </Routes>
     </BrowserRouter>

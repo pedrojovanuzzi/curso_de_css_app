@@ -1,4 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import town from "../imgs/town.svg"
+import SelectLocation from './SelectLocation'
 
 const features = [
   {
@@ -26,23 +28,24 @@ export default function Cities() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
+              <h2 className="text-base/7 font-semibold text-indigo-400">Veja abaixo a lista de localidades atendidas</h2>
               <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                A better workflow
+              
               </p>
               <p className="mt-6 text-lg/8 text-gray-300">
               Somos a empresa com a maior rede e cobertura de Internet em fibra óptica e 
               possuímos o compromisso de oferecer a melhor qualidade em telecomunicações.
               </p>
+              <SelectLocation/>
             </div>
           </div>
-          <div className="flex items-start justify-end lg:order-first">
+          <div className="flex items-start justify-center sm:justify-end lg:order-first">
             <img
               alt="Product screenshot"
-              src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
+              src={town}
               width={2432}
               height={1442}
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-2 ring-white/55 sm:w-[57rem]"
+              className="w-[28rem] max-w-none rounded-xl sm:w-[45rem]"
             />
           </div>
         </div>

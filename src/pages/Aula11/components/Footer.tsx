@@ -58,7 +58,7 @@ const navigation = {
 
   
   
-  export default function Example() {
+  export default function Footer() {
     
     return (
       <footer className="bg-gray-900">

@@ -8,8 +8,8 @@ const navigation = [
   { name: 'Início', href: '/aula11_home' },
   { name: 'Planos', href: '#planos' },
   { name: 'Sobre', href: '/aula11_about' },
-  { name: 'Contato', href: '#' },
-  { name: 'Contrato do Cliente', href: '#' },
+  { name: 'Contato', href: '/aula11_contact' },
+  { name: 'Contrato do Cliente', href: '/aula11_contrato' },
 ]
 
 export default function NavBar() {
